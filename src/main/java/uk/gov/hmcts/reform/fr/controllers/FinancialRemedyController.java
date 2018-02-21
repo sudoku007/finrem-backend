@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
     path = "/",
     produces = { MediaType.APPLICATION_JSON_VALUE }
 )
-public class FRController {
+public class FinancialRemedyController {
 
     @GetMapping(path = "/service")
     @ApiOperation("API operation description")
