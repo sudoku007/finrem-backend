@@ -1,0 +1,16 @@
+#!groovy
+properties([
+        [$class: 'GithubProjectProperty', projectUrlStr: 'https://github.com/hmcts/fr-backend.git'],
+        pipelineTriggers([[$class: 'GitHubPushTrigger']])
+])
+
+@Library("Infrastructure")
+
+def type = "java"
+def product = "financial-remedy"
+def app = "backend"
+
+withPipeline(type, product, app) {
+    enableSlackNotifications('#financialremedy-tech')
+}
+

@@ -1,7 +1,7 @@
-server:
-  # TODO: change to your application's port number
-  port: 4550
+server.port: ${PORT:8085}
 
 management:
   security:
     enabled: ${MANAGEMENT_SECURITY_ENABLED:true}
+
+spring.application.name: Financial Remedy Service

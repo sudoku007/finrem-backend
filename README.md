@@ -1,6 +1,10 @@
-# Spring Boot application template
+# Financial Remedy Application
 
-[![Build Status](https://travis-ci.org/hmcts/spring-boot-template.svg?branch=master)](https://travis-ci.org/hmcts/spring-boot-template)
+## Purpose
+
+The purpose of this App is to support Financial Remedy process.
+
+[![Build Status](https://travis-ci.org/hmcts/fr-backend.svg?branch=master)](https://travis-ci.org/hmcts/fr-backend)
 
 ## Purpose
 
@@ -114,7 +118,7 @@ Create docker image:
   docker-compose build
 ```
 
-Run the distribution (created in `build/install/spring-boot-template` directory)
+Run the distribution (created in `build/install/fr-backend` directory)
 by executing the following command:
 
 ```bash
