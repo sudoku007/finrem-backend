@@ -1,4 +1,4 @@
-package uk.gov.hmcts.reform.fr.controllers;
+package uk.gov.hmcts.reform.finrem.controllers;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -33,7 +33,7 @@ public class FinancialRemedyControllerTest {
     }
 
     @Test
-    public void getHello() throws Exception {
+    public void getServiceName() {
         ResponseEntity<String> response = template.getForEntity(base.toString(),
             String.class);
         assertThat(response.getBody(), equalTo("Financial Remedy"));

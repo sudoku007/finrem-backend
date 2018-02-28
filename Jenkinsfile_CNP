@@ -1,8 +1,4 @@
 #!groovy
-properties([
-        [$class: 'GithubProjectProperty', projectUrlStr: 'https://github.com/hmcts/fr-backend.git'],
-        pipelineTriggers([[$class: 'GitHubPushTrigger']])
-])
 
 @Library("Infrastructure")
 
@@ -11,6 +7,7 @@ def product = "financial-remedy"
 def app = "backend"
 
 withPipeline(type, product, app) {
-    enableSlackNotifications('#financialremedy-tech')
+    // TODO: create a channel
+    // enableSlackNotifications('#financialremedy-tech')
 }
 

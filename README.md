@@ -25,7 +25,7 @@ The template is a working application with a minimal setup. It contains:
  * Hystrix dashboard
  * MIT license and contribution information
 
-The application exposes health endpoint (http://localhost:4550/health) and metrics endpoint
+The application exposes health endpoint (http://localhost:8085/health) and metrics endpoint
 (http://localhost:4550/metrics).
 
 ## Plugins
@@ -125,8 +125,7 @@ by executing the following command:
   docker-compose up
 ```
 
-This will start the API container exposing the application's port
-(set to `4550` in this template app).
+This will start the API container exposing the application's port 8085
 
 In order to test if the application is up, you can call its health endpoint:
 
@@ -187,7 +186,7 @@ inside `@Component` or `@Service` annotated classes.
 
 When this API is running, you can monitor Hystrix metrics in real time using
 [Hystrix Dashboard](https://github.com/Netflix/Hystrix/wiki/Dashboard).
-In order to do this, visit http://localhost:4550/hystrix and provide http://localhost:4550/hystrix.stream
+In order to do this, visit http://localhost:8085/hystrix and provide http://localhost:4550/hystrix.stream
 as the Hystrix event stream URL. Keep in mind that you'll only see data once some
 of your Hystrix commands have been executed. Otherwise *'Loading...'* message will be displayed
 on the monitoring page.

@@ -1,4 +1,4 @@
-package uk.gov.hmcts.reform.fr.controllers;
+package uk.gov.hmcts.reform.finrem.controllers;
 
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
