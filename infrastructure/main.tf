@@ -8,8 +8,8 @@ provider "vault" {
   address = "https://vault.reform.hmcts.net:6200"
 }
 
-module "fr-backend" {
-  source = "git@github.com:hmcts/fr-backend.git?ref=master"
+module "finrem-backend" {
+  source = "git@github.com:hmcts/finrem-backend.git?ref=master"
   product = "${var.product}-backend"
   location = "${var.location}"
   env = "${var.env}"

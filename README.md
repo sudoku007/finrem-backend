@@ -4,7 +4,7 @@
 
 The purpose of this App is to support Financial Remedy process.
 
-[![Build Status](https://travis-ci.org/hmcts/fr-backend.svg?branch=master)](https://travis-ci.org/hmcts/fr-backend)
+[![Build Status](https://travis-ci.org/hmcts/finrem-backend.svg?branch=master)](https://travis-ci.org/hmcts/finrem-backend)
 
 ## Purpose
 
@@ -118,7 +118,7 @@ Create docker image:
   docker-compose build
 ```
 
-Run the distribution (created in `build/install/fr-backend` directory)
+Run the distribution (created in `build/install/finrem-backend` directory)
 by executing the following command:
 
 ```bash

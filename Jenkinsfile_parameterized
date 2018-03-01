@@ -4,12 +4,12 @@
 properties([
   parameters([
     string(name: 'PRODUCT_NAME', defaultValue: 'financial-remedy', description: ''),
-    string(name: 'APP', defaultValue: 'fr-backend', description: ''),
+    string(name: 'APP', defaultValue: 'finrem-backend', description: ''),
     string(name: 'TYPE', defaultValue: 'java', description: ''),
     string(name: 'ENVIRONMENT', defaultValue: 'sandbox', description: 'Environment where code should be build and deployed'),
     choice(name: 'SUBSCRIPTION', choices: 'sandbox\nnonprod\nprod', description: 'Azure subscriptions available to build in')
   ]),
-  [$class: 'GithubProjectProperty', projectUrlStr: 'https://github.com/hmcts/fr-backend.git'],
+  [$class: 'GithubProjectProperty', projectUrlStr: 'https://github.com/hmcts/finrem-backend.git'],
   pipelineTriggers([[$class: 'GitHubPushTrigger']])
 ])
 

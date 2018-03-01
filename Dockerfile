@@ -1,6 +1,6 @@
 FROM openjdk:8-jre
 
-COPY build/install/fr-backend /opt/app/
+COPY build/install/finrem-backend /opt/app/
 
 WORKDIR /opt/app
 
@@ -8,4 +8,4 @@ HEALTHCHECK --interval=10s --timeout=10s --retries=10 CMD http_proxy="" curl --s
 
 EXPOSE 8085
 
-ENTRYPOINT ["/opt/app/bin/fr-backend"]
+ENTRYPOINT ["/opt/app/bin/finrem-backend"]

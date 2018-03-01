@@ -1,15 +1,15 @@
 version: '2.1'
 
 services:
-  fr-backend-api:
+  finrem-backend-api:
     build:
       context: .
       args:
         - http_proxy
         - https_proxy
         - no_proxy
-    image: docker.artifactory.reform.hmcts.net/reform/fr-backend-api
-    container_name: fr-backend-api
+    image: docker.artifactory.reform.hmcts.net/reform/finrem-backend-api
+    container_name: finrem-backend-api
     environment:
       # these environment variables are used by java-logging library
       - ROOT_APPENDER
@@ -19,7 +19,7 @@ services:
       - REFORM_TEAM
       - REFORM_ENVIRONMENT
     volumes:
-      - ./build/install/fr-backend:/opt/app/
+      - ./build/install/finrem-backend:/opt/app/
     ports:
       # check .env
       - $SERVER_PORT:$SERVER_PORT

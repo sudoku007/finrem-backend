@@ -134,7 +134,7 @@ dependencies {
 }
 
 jar {
-  archiveName 'fr-backend.jar'
+  archiveName 'finrem-backend.jar'
   manifest {
     attributes 'Implementation-Title': project.name,
       'Implementation-Version': project.version
