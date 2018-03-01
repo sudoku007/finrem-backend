@@ -1,6 +1,6 @@
 variable "product" {
   type = "string"
-  default = "financial-remedy"
+  default = "finrem"
 }
 
 variable "location" {

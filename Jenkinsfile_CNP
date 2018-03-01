@@ -3,7 +3,7 @@
 @Library("Infrastructure")
 
 def type = "java"
-def product = "financial-remedy"
+def product = "finrem"
 def app = "backend"
 
 withPipeline(type, product, app) {
