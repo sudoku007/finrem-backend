@@ -1,6 +1,11 @@
 #!groovy
 @Library("Infrastructure") _
 
+properties([
+  [$class: 'GithubProjectProperty', projectUrlStr: 'github.com/hmcts/finrem-backend'],
+  pipelineTriggers([[$class: 'GitHubPushTrigger']])
+])
+
 withParameterizedPipeline('java', 'finrem', 'backend', 'sandbox', 'sandbox') {
 
 }
